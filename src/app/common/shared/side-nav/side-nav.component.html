@@ -1,0 +1,8 @@
+<nav class="nav-content">
+    <div *ngFor="let menu of menuItems">
+        <a routerLink="/home" class="section-link" >
+            <span class="icon-css material-symbols-outlined">{{menu.menuIcon}}</span>
+            <div class="menu-label">{{menu.menuName}}</div>
+        </a>
+    </div>
+</nav>
