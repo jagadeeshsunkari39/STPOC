@@ -7,12 +7,17 @@ import { MaterialModule } from './common/material/material/material.module';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonService } from './common/services/common.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { HomeComponent } from './home/home.component';
+import { SideNavComponent } from './common/shared/side-nav/side-nav.component';
+import { SharedModule } from './common/shared/shared/shared.module';
+import { MaterialModule } from './common/material/material/material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,6 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule
+    SharedModule,
+    MaterialModule
   ],
   providers: [CommonService],
   bootstrap: [AppComponent]
