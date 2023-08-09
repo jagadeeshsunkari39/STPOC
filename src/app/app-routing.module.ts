@@ -8,7 +8,23 @@ const routes: Routes = [
   {
     path:'home',
     component:HomeComponent
-  }
+  },
+  {
+    path:'hrservices',
+    loadChildren: () => import('./feature/hr-services/hr-services.module').then(m => m.HrServicesModule)
+  },
+  {
+    path:'adminservices',
+    loadChildren: () => import('./feature/admin-services/admin-services.module').then(m => m.AdminServicesModule)
+  },
+  {
+    path:'facilityServices',
+    loadChildren: () => import('./feature/facility-services/facility-services.module').then(m => m.FacilityServicesModule)
+  },
+  {
+    path:'financeServices',
+    loadChildren: () => import('./feature/finance-services/finance-services.module').then(m => m.FinanceServicesModule)
+  },
 ];
 
 @NgModule({

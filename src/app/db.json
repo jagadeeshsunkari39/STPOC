@@ -1,0 +1,45 @@
+{
+
+  "users": [
+
+      {
+
+          "id": 1,
+
+          "username": "vishnu",
+
+          "password": "1234",
+
+          "email": "vishnu@softtek.com",
+
+          "roles": [
+
+              "hradmin", "superadmin"
+
+          ]
+
+      },
+
+      {
+
+          "id": 1,
+
+          "username": "prasanna",
+
+          "password": "1234",
+
+          "email": "prasanna@softtek.com",
+
+          "roles": [
+
+              "manager"
+
+          ]
+
+      }
+
+  ]
+
+
+
+}

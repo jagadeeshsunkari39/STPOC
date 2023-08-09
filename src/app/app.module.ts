@@ -11,21 +11,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HomeComponent } from './home/home.component';
 import { SideNavComponent } from './common/shared/side-nav/side-nav.component';
 import { SharedModule } from './common/shared/shared/shared.module';
-import { MaterialModule } from './common/material/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
     HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
     SharedModule,
     MaterialModule
   ],

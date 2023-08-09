@@ -1,5 +1,17 @@
-<mat-card>
-    <mat-card-content>
-        Simple Card
-    </mat-card-content>
-</mat-card>
+<div class="bg-img">
+    <div class="four-tabs" [@listAnimation]="tileList.length">
+        <div class="four-tabs-inside">
+          <ng-container *ngFor="let data of tileList" >
+            <a class="card-dash blue1" href="javascript: void(0);"
+            [class.hr-services] = "data.tileId == 1"
+            [class.admin-services] = "data.tileId == 2"
+            [class.facility-services] = "data.tileId == 3"
+            [class.finance-services] = "data.tileId == 4" 
+            (click)="onClickTile(data.route)">
+                <p class="parking-dash-name">{{data.tileName}}</p>
+            </a>
+          </ng-container>
+        </div>
+    </div>
+</div>
+
