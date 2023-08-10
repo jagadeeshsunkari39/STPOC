@@ -1,8 +1,26 @@
-<nav class="nav-content">
+<!-- <nav class="nav-content">
+
+</nav> -->
+<div class="navbar">
+    <nav class="navbar-header">
+        <a routerLink="/" class="logo-button">
+            <span>
+                <img src="../../../../assets/Softtek-Logo.jpg" alt="" class="logo-img">
+            </span>
+        </a>
+        <a></a>
+        <a class="logo-button">
+            <span>
+                <img src="../../../../assets/ProfileIcon.jpg" alt="" class="profile-icon">
+            </span>
+        </a>
+    </nav>
+</div>
+<div class="side-nav">
     <div *ngFor="let menu of menuItems">
-        <a routerLink="/home" class="section-link" >
+        <a routerLink="/home" class="section-link" (click)="onClickRoute(menu)">
             <span class="icon-css material-symbols-outlined">{{menu.menuIcon}}</span>
             <div class="menu-label">{{menu.menuName}}</div>
         </a>
     </div>
-</nav>
+</div>

@@ -24,3 +24,30 @@ export const TileList = [
         role:'financeadmin'
     }
 ]
+
+export const DashboardTile = [
+    {
+        count:200,
+        title:'Title',
+        name:'name',
+        bgcolor:'primary'
+    },
+    {
+        count:200,
+        title:'Title',
+        name:'name',
+        bgcolor:'danger'
+    },
+    {
+        count:200,
+        title:'Title',
+        name:'name',
+        bgcolor:'warning'
+    },
+    {
+        count:200,
+        title:'Title',
+        name:'name',
+        bgcolor:'info'
+    }
+]

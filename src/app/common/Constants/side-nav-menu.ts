@@ -2,7 +2,8 @@ export const SideNavMenu = [
     {
         menuName: 'Get Started',
         menuIcon: 'apps',
-        role:'SuperUser'
+        role:'SuperUser',
+        route: '/hrservices/hr-dashboard'
     },
     {
         menuName: 'Develop',

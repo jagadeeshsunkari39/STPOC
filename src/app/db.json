@@ -14,7 +14,7 @@
 
           "roles": [
 
-              "hradmin", "superadmin"
+              "hradmin", "superadmin", "itadmin", "financeadmin"
 
           ]
 
